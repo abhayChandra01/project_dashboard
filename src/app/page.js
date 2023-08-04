@@ -52,13 +52,13 @@ export default function Home() {
             <div className='flex flex-col space-y-4 w-full max-w-[500px] border p-[25px] md:p-[50px] rounded-lg shadow-md'>
               <div className='text-4xl text-left font-semibold text-[#004b50]'>Sign in your account.</div>
 
-              <div className='text-lg text-left font-extralight'>Dont't have an account? <span onClick={() => setSignIn(!signIn)} className='hover:underline cursor-pointer text-[#00a76f]'>Sign Up</span></div>
+              <div className='text-lg text-left font-extralight'>Don't have an account? <span onClick={() => setSignIn(!signIn)} className='hover:underline cursor-pointer text-[#00a76f]'>Sign Up</span></div>
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
@@ -74,19 +74,19 @@ export default function Home() {
 
               <div className='text-lg text-left font-extralight'>Already have an account? <span onClick={() => setSignIn(!signIn)} className='hover:underline cursor-pointer text-[#00a76f]'>Sign In</span></div>
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
-              <input type="text" id="default-input" placeholder="Lorem Ipsum"
+              <input type="text" placeholder="Lorem Ipsum"
                 className="focus:outline-[#00a76f] bg-transparent border h-[55px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 "
               />
 
