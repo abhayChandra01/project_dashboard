@@ -1,6 +1,10 @@
 "use client"
 import Image from 'next/image'
-import bgimage from '../assets/bgimage.png'
+import bgimage1 from '../assets/bgimage1.jpg'
+import bgimage2 from '../assets/bgimage2.jpg'
+import bgimage3 from '../assets/bgimage3.jpg'
+import bgimage4 from '../assets/bgimage4.jpg'
+
 import { useState } from 'react'
 
 export default function Home() {
@@ -19,8 +23,28 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col md:flex-row w-full min-h-full px-10'>
-        <div className='w-full md:w-[50%] h-full hidden md:flex justify-center items-center'>
-          <Image src={bgimage} />
+        <div className='w-full md:w-[50%] h-full hidden md:flex flex-row justify-center items-center relative pr-10'>
+
+          <div className='h-[250px] w-[250px] lg:h-[320px] lg:w-[320px] absolute bottom-[36%] lg:bottom-[32%] rounded-[50%] border-[20px] border-[#004b50] bg-transparent opacity-40 -z-20'>
+
+          </div>
+
+          <div className='w-[50%] -mt-12'>
+            <div className='w-fit ml-auto py-4 pr-4'>
+              <Image src={bgimage1} className='rounded-[20px] w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
+            </div>
+            <div className='w-fit ml-auto py-4 pr-4'>
+              <Image src={bgimage2} className='rounded-[20px] w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
+            </div>
+          </div>
+          <div className='w-[50%] -mb-12'>
+            <div className='w-fit py-4 pl-4'>
+              <Image src={bgimage3} className='rounded-[20px] w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
+            </div>
+            <div className='w-fit py-4 pl-4'>
+              <Image src={bgimage4} className='rounded-[20px] w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
+            </div>
+          </div>
         </div>
 
         <div className='w-full md:w-[50%] h-full flex justify-center items-center'>
