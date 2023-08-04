@@ -11,6 +11,24 @@ export default function Home() {
 
   const [signIn, setSignIn] = useState(true)
 
+  const backgroundImages = [
+    bgimage1,
+    bgimage2,
+    bgimage3,
+    bgimage4,
+  ];
+
+  const shuffleArray = (array) => {
+    const shuffledArray = array.slice();
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  };
+
+  const [backgroundImage, setBackgroundImage] = useState(shuffleArray(backgroundImages));
+
   return (
     <main className="flex relative min-h-screen">
       <div className='w-full absolute -z-20 bottom-0'>
@@ -31,18 +49,18 @@ export default function Home() {
 
           <div className='w-[50%] -mt-12'>
             <div className='w-fit ml-auto py-4 pr-4'>
-              <Image src={bgimage1} className='rounded-[20px] w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
+              <Image src={backgroundImage[0]} className='rounded-[20px] transition-all ease-in-out duration-300 w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
             </div>
             <div className='w-fit ml-auto py-4 pr-4'>
-              <Image src={bgimage2} className='rounded-[20px] w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
+              <Image src={backgroundImage[1]} className='rounded-[20px] transition-all ease-in-out duration-300 w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
             </div>
           </div>
           <div className='w-[50%] -mb-12'>
             <div className='w-fit py-4 pl-4'>
-              <Image src={bgimage3} className='rounded-[20px] w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
+              <Image src={backgroundImage[2]} className='rounded-[20px] transition-all ease-in-out duration-300 w-[200px] h-[110px] lg:w-[250px] lg:h-[160px]' />
             </div>
             <div className='w-fit py-4 pl-4'>
-              <Image src={bgimage4} className='rounded-[20px] w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
+              <Image src={backgroundImage[3]} className='rounded-[20px] transition-all ease-in-out duration-300 w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]' />
             </div>
           </div>
         </div>
