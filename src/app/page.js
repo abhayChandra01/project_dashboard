@@ -35,7 +35,7 @@ export default function Home() {
         {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="522" viewBox="0 0 1438 522" preserveAspectRatio="none">
           <path d="M171.5 209.5C127.1 215.9 39 286.833 0.5 321.5V522H1437.5V69.5C1426.7 -21.7 1228.67 -3.83335 1131 16.5C829.667 78.1667 215.9 203.1 171.5 209.5Z" fill="#DAF7E9" />
         </svg> */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="420" viewBox="0 0 1439 420" preserveAspectRatio="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1439 400" preserveAspectRatio="none">
           <path d="M252 112.42C100 127.399 20.6667 207.599 0 245.826V522H1438V245.826C1452.4 9.90852 1269.33 -13.184 1176 4.75953L252 112.42Z" fill="#DAF7E9" />
         </svg>
       </div>
