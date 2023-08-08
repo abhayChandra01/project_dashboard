@@ -27,7 +27,7 @@ export default function Home() {
     return shuffledArray;
   };
 
-  const [backgroundImage, setBackgroundImage] = useState(shuffleArray(backgroundImages));
+  const [backgroundImage] = useState(shuffleArray(backgroundImages));
 
   return (
     <main className="flex relative min-h-screen">
@@ -67,8 +67,8 @@ export default function Home() {
 
         <div className='w-full md:w-[50%] h-full flex justify-center items-center'>
           {signIn ?
-            <form className='flex flex-col space-y-4 w-full max-w-[460px] border p-[25px] md:p-[50px] rounded-lg shadow-md'>
-              <div className='text-4xl text-left font-semibold text-[#004b50]'>Sign in your account.</div>
+            <form className='bg-white flex flex-col space-y-4 w-full max-w-[460px] border p-[25px] md:p-[50px] rounded-lg shadow-md'>
+              <div className='text-4xl text-left font-semibold text-[#004b50]'>Sign in</div>
 
               <div className='text-lg text-left font-extralight'>Don't have an account? <span onClick={() => setSignIn(!signIn)} className='hover:underline cursor-pointer text-[#00a76f]'>Sign Up</span></div>
 
@@ -87,8 +87,8 @@ export default function Home() {
             </form>
             :
 
-            <form className='flex flex-col space-y-4 w-full max-w-[500px] border p-[25px] md:p-[50px] rounded-lg shadow-md'>
-              <div className='text-4xl text-left font-semibold text-[#004b50]'>Get Started</div>
+            <form className='bg-white flex flex-col space-y-4 w-full max-w-[500px] border p-[25px] md:p-[50px] rounded-lg shadow-md'>
+              <div className='text-4xl text-left font-semibold text-[#004b50]'>Get started</div>
 
               <div className='text-lg text-left font-extralight'>Already have an account? <span onClick={() => setSignIn(!signIn)} className='hover:underline cursor-pointer text-[#00a76f]'>Sign In</span></div>
 
